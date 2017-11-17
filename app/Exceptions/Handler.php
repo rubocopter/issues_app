@@ -4,6 +4,9 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+
 
 class Handler extends ExceptionHandler
 {
@@ -48,6 +51,16 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if($exception instanceof NotFoundHttpException)
+        {
+            return response()->view('missing', [], 404);
+        }
+
+        if($exception instanceof AccessDeniedHttpException)
+        {
+            return response()->view('forbidden', [], 403);
+        }
+
         return parent::render($request, $exception);
     }
 }
