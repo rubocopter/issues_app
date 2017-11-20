@@ -61,9 +61,20 @@
                     <label for="osSelect" class="control-label">Operating System:</label>
                     <select class="form-control" id="osSelect" data-error="We need some info about your Operating System." name="os" required>
                         <option disabled selected value> -- Select an option. -- </option>
-                        <option>Windows</option>
-                        <option>Mac OSX</option>
-                        <option>Linux</option>
+                        <option>Windows XP</option>
+                        <option>Windows 7</option>
+                        <option>Windows 8</option>
+                        <option>Windows 10</option>
+                        <option>OS X 10.10 Yosemite</option>
+                        <option>OS X 10.11 El Capitan</option>
+                        <option>macOS 10.12 Sierra</option>
+                        <option>macOS 10.13 High Sierra</option>
+                        <option>Ubuntu</option>
+                        <option>Linux Mint</option>
+                        <option>Debian</option>
+                        <option>Fedora</option>
+                        <option>CentOS</option>
+                        <option>Other(Specify in description)</option>
                     </select>
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                     <div class="help-block with-errors"></div>
@@ -71,7 +82,7 @@
 
                 <div class="form-group has-feedback" >
                     <label for="inputBrowser" class="control-label">Browser:</label>
-                    <input type="text" class="form-control" id="inputBrowser" aria-describedby="inputBrowser" placeholder="Name of your browser." name="browser" data-error="Please type the name of your web browser." required>
+                    <input type="text" class="form-control" id="inputBrowser" aria-describedby="inputBrowser" placeholder="Name and version of your browser." name="browser" data-error="Please type the name of your web browser." required>
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                     <div class="help-block with-errors"></div>
                 </div>
@@ -84,6 +95,9 @@
                         <option>Babelomics</option>
                         <option>CSVS</option>
                         <option>BierApp</option>
+                        <option>Hipathia</option>
+                        <option>Team</option>
+                        <option>CNVS</option>
                     </select>
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                     <div class="help-block with-errors"></div>
@@ -91,14 +105,14 @@
 
                 <div class="form-group has-feedback">
                     <label for="issueTextarea" class="control-label">Issue information:</label>
-                    <textarea class="form-control" id="issueTextarea" rows="4" data-error="Please tell us about your issue." name="issue_info" required></textarea>
+                    <textarea class="form-control" placeholder="Explain the problems experienced in the application" id="issueTextarea" rows="4" data-error="Please tell us about your issue." name="issue_info" required></textarea>
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                     <div class="help-block with-errors"></div>
                 </div>
 
 
                 <div class="form-group">
-                    <label for="fileAttachment">File attachment:</label>
+                    <label for="fileAttachment">Screenshots:</label>
                     <input type="file" name="screenshots[]" class="form-control-file" id="fileAttachment" aria-describedby="fileHelp" accept="image/*" data-show-upload="false" data-show-caption="true" multiple>
                     <small id="fileHelp" class="form-text text-muted">Upload some screenshots.</small>
                 </div>

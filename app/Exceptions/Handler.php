@@ -56,6 +56,7 @@ class Handler extends ExceptionHandler
             return response()->view('missing', [], 404);
         }
 
+
         if($exception instanceof AccessDeniedHttpException)
         {
             return response()->view('forbidden', [], 403);
