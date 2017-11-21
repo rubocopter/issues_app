@@ -91,7 +91,7 @@
                 <div class="form-group has-feedback" >
                     <label for="inputBrowser" class="control-label">Browser:</label>
                     <input type="text" class="form-control" id="inputBrowser" aria-describedby="inputBrowser" placeholder="Name and version of your browser." name="browser" data-error="Please fill the information about your web browser." required>
-                    <p><a href="/browserHelp">How to find version of installed Internet browser.</a></p>
+                    <p><a href="/browserHelp" target="_blank">How to find version of installed Internet browser.</a></p>
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                     <div class="help-block with-errors"></div>
                 </div>
