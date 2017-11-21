@@ -31,17 +31,25 @@ class UploadController extends Controller
             }
         }
 
-        $client = new Redmine\Client('http://redmine.domain.com','user', 'password');
+        $client = new Redmine\Client('http://redmine.domain.es','support', 'web_support');
 
         $client->issue->create([
-            'project_id'  => 'test',
+            'project_id'  => 'web_support',
+            'tracker_id'  => 3 ,
             'subject'     => $issue->app.'_'.$issue->id ,
             'description' => ' *Name:* '.$issue->name.
-                ' *Email:* '.$issue->email.
-                ' *OS:* '.$issue->os.
-                ' *Browser:* '.$issue->browser.
-                ' *Application:* '.$issue->app.
-                ' *Issue info:* '.$issue->issue_info,
+                '
+                *Institution:* '.$issue->institution.
+                '
+                *Email:* '.$issue->email.
+                '
+                *OS:* '.$issue->os.
+                '
+                *Browser:* '.$issue->browser.
+                '
+                *Application:* '.$issue->app.
+                '
+                *Issue info:* '.$issue->issue_info,
         ]);
         $client->issue->all([
             'limit' => 1000

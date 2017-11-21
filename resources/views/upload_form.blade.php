@@ -26,6 +26,7 @@
     <!-- bootstrap-validator -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
 
+</head>
 
 <body id="page-top">
 <div class="content">
@@ -46,6 +47,13 @@
                 <div class="form-group has-feedback">
                     <label for="inputName" class="control-label">Name:</label>
                     <input type="text" class="form-control" id="inputName" name="name" aria-describedby="inputName" placeholder="Enter your name." data-error="Please enter your name." required>
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group has-feedback">
+                    <label for="inputInstitution" class="control-label">Institution:</label>
+                    <input type="text" class="form-control" id="inputName" name="institution" aria-describedby="inputInstitution" placeholder="Enter your institution." data-error="Please enter the name of your institution." required>
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                     <div class="help-block with-errors"></div>
                 </div>
@@ -74,7 +82,7 @@
                         <option>Debian</option>
                         <option>Fedora</option>
                         <option>CentOS</option>
-                        <option>Other(Specify in description)</option>
+                        <option>Other</option>
                     </select>
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                     <div class="help-block with-errors"></div>
@@ -82,7 +90,8 @@
 
                 <div class="form-group has-feedback" >
                     <label for="inputBrowser" class="control-label">Browser:</label>
-                    <input type="text" class="form-control" id="inputBrowser" aria-describedby="inputBrowser" placeholder="Name and version of your browser." name="browser" data-error="Please type the name of your web browser." required>
+                    <input type="text" class="form-control" id="inputBrowser" aria-describedby="inputBrowser" placeholder="Name and version of your browser." name="browser" data-error="Please fill the information about your web browser." required>
+                    <p><a href="/browserHelp">How to find version of installed Internet browser.</a></p>
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                     <div class="help-block with-errors"></div>
                 </div>
@@ -128,3 +137,5 @@
         </div>
     </div>
 </div>
+</body>
+</html>
