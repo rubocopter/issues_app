@@ -6,6 +6,8 @@ use App\Http\Requests\UploadRequest;
 use App\Issue;
 use App\IssueScreenshot;
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 
 use Redmine;
@@ -19,9 +21,12 @@ class UploadController extends Controller
 
     public function uploadSubmit(UploadRequest $request)
     {
+        $URL_REDMINE = env('URL_REDMINE', false);
+        $USERNAME_REDMINE = env('USERNAME_REDMINE', false);
+        $PASSWORD_REDMINE = env('PASSWORD_REDMINE', false);
 
         //Conexión Redmine
-        $client = new Redmine\Client('http://redmine.clinbioinfosspa.es','support', 'web_support');
+        $client = new Redmine\Client($URL_REDMINE,$USERNAME_REDMINE, $PASSWORD_REDMINE);
 
         //recoger los datos y crear en la bd
         $issue = Issue::create($request->all());
