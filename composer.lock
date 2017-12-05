@@ -457,6 +457,7 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
             "version": "v5.5.24",
             "source": {
                 "type": "git",
@@ -467,6 +468,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/06135405bb1f736dac5e9529ed1541fc446c9c0f",
                 "reference": "06135405bb1f736dac5e9529ed1541fc446c9c0f",
+=======
+            "version": "v5.5.23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "cb8ec95aa65fbaeeaf94026c8a9f04bb97c13777"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/cb8ec95aa65fbaeeaf94026c8a9f04bb97c13777",
+                "reference": "cb8ec95aa65fbaeeaf94026c8a9f04bb97c13777",
+>>>>>>> e27f130... update and reset button
                 "shasum": ""
             },
             "require": {
@@ -586,7 +599,11 @@
                 "framework",
                 "laravel"
             ],
+<<<<<<< HEAD
             "time": "2017-12-07T01:28:21+00:00"
+=======
+            "time": "2017-12-04T14:19:08+00:00"
+>>>>>>> e27f130... update and reset button
         },
         {
             "name": "laravel/tinker",
