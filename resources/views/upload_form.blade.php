@@ -115,6 +115,7 @@
                 @include ('layouts.errors')
 
                 <input type="submit" value="Submit" class="btn btn-success"></input>
+                <button class="btn btn-warning" type="reset" value="Reset">Reset</button>
 
             </form>
 
