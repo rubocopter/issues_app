@@ -33,8 +33,9 @@ class UploadRequest extends FormRequest
         ];
         $screenshots = count($this->input('screenshots'));
 
+        // Restrict types and size of the files
         foreach(range(0, $screenshots) as $index) {
-            $rules['screenshots.' . $index] = 'image|mimes:jpg,jpeg,bmp,png|max:2000';
+            $rules['screenshots.' . $index] = 'image|mimes:jpg,jpeg,bmp,png|max:4000';
         }
 
         return $rules;

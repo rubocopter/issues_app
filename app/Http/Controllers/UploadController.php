@@ -6,8 +6,6 @@ use App\Http\Requests\UploadRequest;
 use App\Issue;
 use App\IssueScreenshot;
 
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 
 use Redmine;
