@@ -75,6 +75,7 @@ These env variables will help you in configuring your redmine server:
 And then:     
     
     $ cd issues_app
+    $ composer install
     
 To create the tables of the db use:
     
