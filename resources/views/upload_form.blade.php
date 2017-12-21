@@ -55,14 +55,14 @@
                     <label for="osSelect" class="control-label">Operating System:</label>
                     <select class="form-control" id="osSelect" data-error="We need some info about your Operating System." name="os" required>
                         <option disabled selected value> -- Select an option. -- </option>
-                        <option>Windows XP</option>
-                        <option>Windows 7</option>
-                        <option>Windows 8</option>
                         <option>Windows 10</option>
-                        <option>OS X 10.10 Yosemite</option>
-                        <option>OS X 10.11 El Capitan</option>
-                        <option>macOS 10.12 Sierra</option>
+                        <option>Windows 8</option>
+                        <option>Windows 7</option>
+                        <option>Windows XP</option>
                         <option>macOS 10.13 High Sierra</option>
+                        <option>macOS 10.12 Sierra</option>
+                        <option>OS X 10.11 El Capitan</option>
+                        <option>OS X 10.10 Yosemite</option>
                         <option>Ubuntu</option>
                         <option>Linux Mint</option>
                         <option>Debian</option>
@@ -84,15 +84,19 @@
 
                 <div class="form-group has-feedback">
                     <label for="applicationSelect" class="control-label">Application:</label>
-                    <select class="form-control" id="applicationSelect" name="app" required>
+                    <select class="form-control" id="applicationSelect" data-error="We need some info about your App." name="app" required>
                         <option disabled selected value> -- Select an option. -- </option>
                         <option>IVA</option>
-                        <option>Babelomics</option>
+                        <option>IVA-ACCI</option>
+                        <option>IVA-EnoD</option>
+                        <option>IVA-SAS</option>
+                        <option>IVA-NageN</option>
                         <option>CSVS</option>
-                        <option>BierApp</option>
                         <option>Hipathia</option>
+                        <option>BierApp</option>
                         <option>Team</option>
                         <option>CNVS</option>
+                        <option>Babelomics</option>
                     </select>
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                     <div class="help-block with-errors"></div>
