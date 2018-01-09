@@ -5,9 +5,6 @@
 
     @include ('layouts.heads')
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="{{{ asset('img/logo-fundacion.png') }}}">
-
     <title>Issue form</title>
 
     @include ('layouts.imports')
@@ -17,7 +14,7 @@
 <body id="page-top">
 <div class="content">
 
-    <br><br><br>
+    <br>
 
     <div class="row">
 
@@ -51,7 +48,12 @@
                     <div class="help-block with-errors"></div>
                 </div>
 
-                <div class="form-group has-feedback">
+                <label>Is the failure from this browser and operating system?</label><span style="padding-left: 10px"></span><input style="width: 25px;height: 25px;margin: 20px auto;" type="checkbox" onclick="onToggle()" id="cbox1" value="first_checkbox">
+
+                <br>
+                <br>
+
+                <div class="form-group has-feedback" id="divOS">
                     <label for="osSelect" class="control-label">Operating System:</label>
                     <select class="form-control" id="osSelect" data-error="We need some info about your Operating System." name="os" required>
                         <option disabled selected value> -- Select an option. -- </option>
@@ -63,18 +65,20 @@
                         <option>macOS 10.12 Sierra</option>
                         <option>OS X 10.11 El Capitan</option>
                         <option>OS X 10.10 Yosemite</option>
+                        <option>Linux x86_64</option>
                         <option>Ubuntu</option>
                         <option>Linux Mint</option>
                         <option>Debian</option>
                         <option>Fedora</option>
                         <option>CentOS</option>
-                        <option>Other</option>
+                        <option>Arch</option>
+                        <option>Other (Specify later)</option>
                     </select>
                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                     <div class="help-block with-errors"></div>
                 </div>
 
-                <div class="form-group has-feedback" >
+                <div class="form-group has-feedback" id="divBrowser">
                     <label for="inputBrowser" class="control-label">Browser:</label>
                     <input type="text" class="form-control" id="inputBrowser" aria-describedby="inputBrowser" placeholder="Name and version of your browser." name="browser" data-error="Please fill the information about your web browser." required>
                     <p><a href="/browserHelp" target="_blank">How to find version of installed Internet browser.</a></p>
@@ -118,7 +122,7 @@
 
                 @include ('layouts.errors')
 
-                <input type="submit" value="Submit" class="btn btn-success"></input>
+                <input type="submit" value="Submit" class="btn btn-success">
                 <button class="btn btn-warning" type="reset" value="Reset">Reset</button>
 
             </form>
@@ -128,5 +132,22 @@
         </div>
     </div>
 </div>
+
+<script>
+    // on toggle method
+    function onToggle() {
+        // check if checkbox is checked
+        if (document.querySelector('#cbox1').checked) {
+            // if checked
+            document.getElementById("inputBrowser").value = navigator.appVersion;
+            document.getElementById("inputBrowser").readOnly = true;
+
+        } else {
+            // if unchecked
+            document.getElementById("inputBrowser").value = "";
+            document.getElementById("inputBrowser").readOnly = false;
+        }
+    }
+</script>
 </body>
 </html>
