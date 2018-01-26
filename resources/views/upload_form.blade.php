@@ -11,7 +11,7 @@
 
 </head>
 
-<body id="page-top">
+<body>
 <div class="content">
 
     <br>
@@ -25,6 +25,7 @@
             <form action="/upload" id="issueForm" data-toggle="validator" role="form" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <h4>Submit issue information:</h4>
+
                 <br>
 
                 <div class="form-group has-feedback">
@@ -50,7 +51,6 @@
 
                 <label>Is the failure from this browser and operating system?</label><span style="padding-left: 10px"></span><input style="width: 25px;height: 25px;margin: 20px auto;" type="checkbox" onclick="onToggle()" id="cbox1" value="first_checkbox">
 
-                <br>
                 <br>
 
                 <div class="form-group has-feedback" id="divOS">
@@ -124,11 +124,7 @@
 
                 <input type="submit" value="Submit" class="btn btn-success">
                 <button class="btn btn-warning" type="reset" value="Reset">Reset</button>
-
             </form>
-
-            <div class="col-md-3"></div>
-
         </div>
     </div>
 </div>
