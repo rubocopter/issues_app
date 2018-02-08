@@ -1,7 +1,11 @@
 # Issues application
-Web application made with the Laravel framework, incorporates a form with a list of fields about the applications in development and information about the user and his browser.
+Web application made with Laravel, incorporates a form with a list of fields about the applications in development and information about the user and his browser.
 
-Save the data in a database and in turn perform the insertion of the issue in Redmine through the Redmine API.
+![](https://lh6.googleusercontent.com/Vr15jyqPg6QhdP3yn0lL3KqXJc3nXh1nGHKeTqiSkq7kRxh7h8EjBC6TyNJ7uufZRvqFgwJZTzJ81mXOH5yl=w1680-h878-rw)
+
+
+This app save the data in a database and in turn perform the insertion of the issue in Redmine through the Redmine API.
+
 ### Server Requirements:
 The Laravel framework has a few system requirements. Of course, all of these requirements are satisfied by the Laravel Homestead virtual machine, so it's highly recommended that you use Homestead as your local Laravel development environment.
 
