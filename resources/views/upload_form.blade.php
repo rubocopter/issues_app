@@ -93,6 +93,7 @@
                         <option>IVA</option>
                         <option>IVA-ACCI</option>
                         <option>IVA-EnoD</option>
+                        <option>IVA-EXT</option>
                         <option>IVA-SAS</option>
                         <option>IVA-NageN</option>
                         <option>CSVS</option>
