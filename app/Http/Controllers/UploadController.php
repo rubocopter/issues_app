@@ -50,7 +50,7 @@ class UploadController extends Controller
         ]);
 
         //Comprobar si hay screens en el formulario
-        if(count($request->screenshots) > 0 ){
+        if(count($request->screenshots) != 0 ){
 
             foreach ($request->screenshots as $screenshot) {
 

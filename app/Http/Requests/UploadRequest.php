@@ -31,7 +31,7 @@ class UploadRequest extends FormRequest
             'app' => 'required',
             'issue_info' => 'required'
         ];
-        $screenshots = count($this->input('screenshots'));
+        $screenshots = @count($this->input('screenshots'));
 
         // Restrict types and size of the files
         foreach(range(0, $screenshots) as $index) {
