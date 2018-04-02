@@ -2,7 +2,7 @@
 
 Web application made with Laravel, incorporates a form with a list of fields about the applications in development and information about the user and his browser.
 
-![screenshot](https://lh6.googleusercontent.com/_arA2lPLJGIKrq333zKlteEK-vYTFb7Nar-7aStt51lLHlxs9r9L9SskitW4_XQDHizV0ACvZTbFe_mPo4gY=w1680-h927-rw)
+![screenshot](http://clinbioinfosspa.es/files/image/issues_app.jpg)
 
 This app save the data in a database and in turn perform the insertion of the issue in Redmine through the Redmine API.
 
