@@ -6,6 +6,8 @@ Web application made with Laravel, incorporates a form with a list of fields abo
 
 This app save the data in a database and in turn perform the insertion of the issue in Redmine through the Redmine API.
 
+`This is running Laravel version 5.6.`
+
 ## Server Requirements
 
 The Laravel framework has a few system requirements. Of course, all of these requirements are satisfied by the Laravel Homestead virtual machine, so it's highly recommended that you use Homestead as your local Laravel development environment.
@@ -27,7 +29,7 @@ Clone this repo by doing:
 
     git clone https://github.com/onit4ku/issues_app.git
 
-Create an .env file in the root of the project for the configuration of the app, here is an example of what the template would be:
+Create an .env file in the root of the project or use the .env-getting-started and rename to .env with your configuration, here is an example of what the template would be:
 
     APP_NAME=Laravel
     APP_ENV=local
