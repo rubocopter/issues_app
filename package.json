@@ -12,9 +12,9 @@
     "devDependencies": {
         "axios": "^0.17",
         "bootstrap-sass": "^3.3.7",
-        "cross-env": "^5.1.4",
+        "cross-env": "^5.1.5",
         "jquery": "^3.3.1",
-        "laravel-mix": "^1.7.2",
+        "laravel-mix": "^2.1.11",
         "lodash": "^4.17.10",
         "vue": "^2.5.16"
     },
