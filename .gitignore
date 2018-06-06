@@ -1,4 +1,6 @@
+# dependencies
 /node_modules
+
 /public/hot
 /public/storage
 /storage/*.key
@@ -7,6 +9,20 @@
 /.vagrant
 Homestead.json
 Homestead.yaml
-npm-debug.log
-yarn-error.log
+
+# misc
+.DS_Store
+
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+
+package-lock.json
+npm-debug.log*
+composer.lock
